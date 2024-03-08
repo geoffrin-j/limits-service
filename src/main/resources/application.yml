@@ -5,6 +5,13 @@ spring:
   config:
     import: optional:configserver:http://localhost:8888
 
+  profile:
+    active: qa
+
+  cloud:
+    config:
+      profile: dev
+      
 server:
   port: 8900
 
